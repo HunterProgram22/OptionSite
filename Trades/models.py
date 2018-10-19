@@ -47,3 +47,6 @@ class OptionTrade(models.Model):
         choices = DIRECTIONAL_BIAS_CHOICES,
         default = BULLISH,
         )
+
+    def __str__(self):
+        return self.directional_bias
